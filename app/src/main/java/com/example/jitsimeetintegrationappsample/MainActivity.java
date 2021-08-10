@@ -27,11 +27,15 @@ public class MainActivity extends AppCompatActivity {
     private EditText yourName;
     private Button joinButton;
     private JitsiMeetUserInfo jitsiMeetUserInfo = new JitsiMeetUserInfo();
+    private CallRoomModel callRoomModel = new CallRoomModel();
+    private DBClass db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        db = new DBClass(this);
+        db.openDatabase();
 
         conferenceName = findViewById(R.id.conferenceName);
         yourName = findViewById(R.id.PersonName);
@@ -52,15 +56,21 @@ public class MainActivity extends AppCompatActivity {
         joinButton.setOnClickListener(v -> {
             String conferenceNameText = conferenceName.getText().toString();
             String yourNameText = yourName.getText().toString();
-
+            callRoomModel.setRoomName(yourNameText);
             if(!conferenceNameText.isEmpty() && !yourNameText.isEmpty()) {
                 jitsiMeetUserInfo.setDisplayName(yourNameText);
+                callRoomModel.setUserInfo(jitsiMeetUserInfo);
                 JitsiMeetConferenceOptions options
                         = new JitsiMeetConferenceOptions.Builder()
                         .setRoom(conferenceNameText)
-                        .setUserInfo(jitsiMeetUserInfo)
+                        .setUserInfo(callRoomModel.getUserInfo())
                         .build();
+                CallRoomModel temp = new CallRoomModel();
+                temp.setRoomName(conferenceNameText);
+                temp.setUserInfo(jitsiMeetUserInfo);
+                db.insertTask(temp);
                 JitsiMeetActivity.launch(MainActivity.this, options);
+                finish();
             }
 
         });

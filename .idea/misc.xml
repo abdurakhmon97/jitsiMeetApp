@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/All apps/JitsiMeetIntegrationAppSample/app/src/main/res/layout/activity_call_room_list.xml" value="0.2536231884057971" />
         <entry key="..\:/All apps/JitsiMeetIntegrationAppSample/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/All apps/JitsiMeetIntegrationAppSample/app/src/main/res/layout/one_room.xml" value="0.4" />
       </map>
     </option>
   </component>
