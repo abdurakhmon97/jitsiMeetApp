@@ -35,8 +35,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         System.out.println(position + " here is position --------");
         System.out.println(todoList.get(position).getRoomName());
-        holder.roomName.setText(todoList.get(position).getRoomName());
-        holder.userName.setText(todoList.get(position).getUserInfo().getDisplayName());
+        holder.roomName.setText("Conference name: " + todoList.get(position).getRoomName());
+        holder.userName.setText("User name: " + todoList.get(position).getUserInfo().getDisplayName());
 
     }
 
