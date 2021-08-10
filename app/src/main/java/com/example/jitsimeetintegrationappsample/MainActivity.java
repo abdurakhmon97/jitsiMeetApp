@@ -8,6 +8,9 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.jitsimeetintegrationappsample.model.CallRoomModel;
+import com.example.jitsimeetintegrationappsample.presenterAndView.Presenter;
+
 import org.jitsi.meet.sdk.JitsiMeetActivity;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
 

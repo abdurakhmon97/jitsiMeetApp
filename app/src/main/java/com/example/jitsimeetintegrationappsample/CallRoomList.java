@@ -6,18 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 
+import com.example.jitsimeetintegrationappsample.adapter.Adapter;
+import com.example.jitsimeetintegrationappsample.model.CallRoomModel;
+import com.example.jitsimeetintegrationappsample.presenterAndView.Presenter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import org.jitsi.meet.sdk.JitsiMeetActivity;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
-import org.jitsi.meet.sdk.JitsiMeetUserInfo;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class CallRoomList extends AppCompatActivity implements Presenter.View{

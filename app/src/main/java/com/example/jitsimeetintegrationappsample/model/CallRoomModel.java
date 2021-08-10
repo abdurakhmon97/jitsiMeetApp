@@ -1,4 +1,4 @@
-package com.example.jitsimeetintegrationappsample;
+package com.example.jitsimeetintegrationappsample.model;
 
 import org.jitsi.meet.sdk.JitsiMeetUserInfo;
 

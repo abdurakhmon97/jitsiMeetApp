@@ -1,4 +1,4 @@
-package com.example.jitsimeetintegrationappsample;
+package com.example.jitsimeetintegrationappsample.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+
+import com.example.jitsimeetintegrationappsample.model.CallRoomModel;
 
 import org.jitsi.meet.sdk.JitsiMeetUserInfo;
 

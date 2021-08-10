@@ -1,6 +1,9 @@
-package com.example.jitsimeetintegrationappsample;
+package com.example.jitsimeetintegrationappsample.presenterAndView;
 
 import android.content.Context;
+
+import com.example.jitsimeetintegrationappsample.model.CallRoomModel;
+import com.example.jitsimeetintegrationappsample.db.DBClass;
 
 import org.jitsi.meet.sdk.JitsiMeet;
 import org.jitsi.meet.sdk.JitsiMeetConferenceOptions;
@@ -8,7 +11,6 @@ import org.jitsi.meet.sdk.JitsiMeetUserInfo;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 

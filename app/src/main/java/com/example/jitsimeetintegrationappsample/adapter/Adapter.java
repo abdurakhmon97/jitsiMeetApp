@@ -1,4 +1,4 @@
-package com.example.jitsimeetintegrationappsample;
+package com.example.jitsimeetintegrationappsample.adapter;
 
 import android.annotation.SuppressLint;
 
@@ -13,6 +13,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.jitsimeetintegrationappsample.CallRoomList;
+import com.example.jitsimeetintegrationappsample.model.CallRoomModel;
+import com.example.jitsimeetintegrationappsample.R;
 
 import java.util.List;
 
